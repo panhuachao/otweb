@@ -16,16 +16,20 @@ namespace Home\Controller;
 class ArticleController extends HomeController {
 
     /* 文档模型频道页 */
-	public function index(){
-		/* 分类信息 */
-		$category = $this->category();
+	// public function index(){
+	// 	/* 分类信息 */
+	// 	$category = $this->category();
 
-		//频道页只显示模板，默认不读取任何内容
-		//内容可以通过模板标签自行定制
+	// 	//频道页只显示模板，默认不读取任何内容
+	// 	//内容可以通过模板标签自行定制
 
-		/* 模板赋值并渲染模板 */
-		$this->assign('category', $category);
-		$this->display($category['template_index']);
+	// 	/* 模板赋值并渲染模板 */
+	// 	$this->assign('category', $category);
+	// 	$this->display($category['template_index']);
+	// }
+	public function index()
+	{
+		$this->display("lists");
 	}
 
 	/* 文档模型列表页 */
