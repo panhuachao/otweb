@@ -13,10 +13,6 @@
 <meta content="telephone=no" name="format-detection">
 
 <!-- Fonts -->
-<!-- Open Sans -->
-<link href='http://fonts.useso.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
-<!-- VarelaRound -->
-<link href='http://fonts.useso.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 <!-- Icon Font - Font Awesome -->
 <link href="/onethink/Public/static/theme/css/font-awesome.min.css" rel="stylesheet">
 
@@ -104,7 +100,7 @@
                 <li class="z-nav__item">
                     <!-- Subsidiary menu toogle button -->
                     <span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                    <a class="z-nav__link z-nav__link--active" href="index.html">Home</a>
+                    <a class="z-nav__link z-nav__link--active" href="<?php echo U('Index/index');?>">Home</a>
                     <!-- Subsidiary menu list-->
                     <ul class="z-nav__list-secondary">
                                 <li class="z-nav__item"><a class="z-nav__link" href="index1.html">Homepage Version 1</a></li>
@@ -170,10 +166,10 @@
                 <li class="z-nav__item">
                     <!-- Subsidiary menu toogle button -->
                     <span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-                    <a class="z-nav__link" href="about.html">About</a>
+                    <a class="z-nav__link" href="<?php echo U('About/index');?>">About</a>
                     <!-- Subsidiary menu list-->
                     <ul class="z-nav__list-secondary">
-                        <li class="z-nav__item"><a class="z-nav__link" href="about.html">About</a></li>
+                        <li class="z-nav__item"><a class="z-nav__link" href="<?php echo U('About/index');?>">About</a></li>
                         <li class="z-nav__item"><a class="z-nav__link" href="single-employee.html">Single employee</a></li>
                         <li class="z-nav__item"><a class="z-nav__link" href="careers.html">Careers</a></li>
                         <li class="z-nav__item"><a class="z-nav__link" href="testimonials.html">Testimonials</a></li>
@@ -695,7 +691,7 @@
 					<article class="post post--latest">
 						<h3 class="not-visible">Latest post</h3>
 						<a class="post__images" href="single-post.html">
-							<img src="http://placehold.it/160x160" alt="">
+							<img src="/onethink/Public/static/theme/images/160x160.png" alt="">
 						</a>
 						<a class="post__text" href="single-post.html">Mauris orci purus, ultrices dapibus justo non, eleifend consequat lorem. </a>
 						<time datetime="2014-07-17" class="post__date">July 17, 2014</time>
@@ -706,7 +702,7 @@
 					<article class="post post--latest">
 						<h3 class="not-visible">Latest post</h3>
 						<a class="post__images" href="single-post.html">
-							<img src="http://placehold.it/160x160" alt="">
+							<img src="/onethink/Public/static/theme/images/160x160.png" alt="">
 						</a>
 						<a class="post__text" href="single-post.html">Pellentesque et magna malesuada, scelerisque elit ac, convallis lacus. </a>
 						<time datetime="2014-07-16" class="post__date">July 16, 2014</time>
@@ -805,29 +801,31 @@
 <!-- Mobile menu -->
 <script src="/onethink/Public/static/theme/external/z-nav/jquery.mobile.menu.js"></script>
 
+<!-- Touch slider - Swiper -->
+<script src="/onethink/Public/static/theme/external/swiper/idangerous.swiper.js"></script>
+
+<!-- Scroll to piugin -->
+<script src="/onethink/Public/static/theme/external/scrollto/jquery.scrollTo.min.js"></script>
+
+
+<!-- Waypoints -->
+<script src="/onethink/Public/static/theme/external/waypoint/waypoints.min.js"></script>
+
+
+<!-- Custom -->
+<script src="/onethink/Public/static/theme/js/custom.js"></script>
+
+
+
 <!-- Sliders -->
 <!-- jQuery REVOLUTION Slider -->
 <script src="/onethink/Public/static/theme/external/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 <script src="/onethink/Public/static/theme/external/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<!-- Touch slider - Swiper -->
-<script src="/onethink/Public/static/theme/external/swiper/idangerous.swiper.js"></script>
-
-<!-- Twitter feed -->
-<script src="/onethink/Public/static/theme/external/twitterfeed/twitterfeed.js"></script>
-<!-- Scroll to piugin -->
-<script src="/onethink/Public/static/theme/external/scrollto/jquery.scrollTo.min.js"></script>
-
 <!-- Livicons -->
 <script src="/onethink/Public/static/theme/external/livicons/livicons-1.3.min.js"></script>
 <script src="/onethink/Public/static/theme/external/livicons/raphael-min.js"></script>
-
-<!-- Waypoints -->
-<script src="/onethink/Public/static/theme/external/waypoint/waypoints.min.js"></script>
  <!-- Event that will trigger when the element is scrolled in to the viewport.--> 
 <script src="/onethink/Public/static/theme/external/inview/jquery.inview.js"></script>
-
-<!-- Custom -->
-<script src="/onethink/Public/static/theme/js/custom.js"></script>
 
 <script>
     $(document).ready(function() {

@@ -4,7 +4,7 @@
 Modernizr.load({
 	test: Modernizr.touch,
 	yep :['css/touch.css?v=1'],
-	nope: ['external/waypoint/waypoints.min.js'],
+	nope: ['/onethink/Public/static/theme/external/waypoint/waypoints.min.js'],
 	complete : function () {
 		if (Modernizr.touch){
 			//initMobile
