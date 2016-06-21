@@ -7,20 +7,18 @@
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
 
-namespace Home\Controller;
-use OT\DataDictionary;
+namespace Home\Logic;
 
 /**
- * 图册
+ * 文档模型子模型 - 文章模型
  */
-class GalleryController extends HomeController {
+class ArticleLogic extends BaseLogic{
+	/* 自动验证规则 */
+	protected $_validate = array(
+		array('content', 'require', '内容不能为空！', self::MUST_VALIDATE , 'regex', self::MODEL_BOTH),
+	);
 
-	//系统首页
-    public function index(){  
-    	$Document = D('Document');
-    	$list = $Document->order('create_time')->limit(10)->select();
-    	$this->assign('list', $list);
-        $this->display();
-    }
+	/* 自动完成规则 */
+	protected $_auto = array();
 
 }
